@@ -267,6 +267,7 @@ class LiquidFillGauge extends PureComponent {
         }
     }
     animateWave() {
+        console.log("animatewave");
         const width = (this.props.width * (this.props.innerRadius - this.props.margin)) / 2;
         const waveAnimationScale = scaleLinear()
             .range([-width, width])
